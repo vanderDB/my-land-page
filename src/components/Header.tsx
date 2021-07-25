@@ -1,14 +1,19 @@
 import styled from "styled-components";
 import {IColorThemeProps} from "../@styled/IColorThemeProps";
+import ThemeSelector from "./ThemeSelector";
+import React from "react";
+import {NavBar} from "./NavBar";
 
-export function Header(props: any) {
+export function Header() {
     return (
         <StyledHeader>
-            Header
+            <ThemeSelector/>
+            <NavBar/>
         </StyledHeader>
     );
 }
 
 const StyledHeader = styled.div<IColorThemeProps>`
-    background-color: ${props => props.theme.backgroundColor};
+  display: flex;
+  justify-content: space-around;
 `;

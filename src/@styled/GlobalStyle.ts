@@ -1,6 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
+import {IColorThemeProps} from "./IColorThemeProps";
 
-export const GlobalStyle = createGlobalStyle`
+export const GlobalStyle = createGlobalStyle<IColorThemeProps>`
   body {
-    background-color: #b1b1c6;
+    background-color: ${props=>props.theme.lightPrimaryColor};
   }`;

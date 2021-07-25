@@ -1,4 +1,4 @@
-import {IColorTheme, lightTheme} from "../@styled/Themes";
+import {IColorTheme, orangeTheme} from "../@styled/Themes";
 import {createSlice, PayloadAction} from "@reduxjs/toolkit";
 
 export interface IColorThemeSlice {
@@ -6,7 +6,7 @@ export interface IColorThemeSlice {
 }
 
 const initialState: IColorThemeSlice = {
-    theme: lightTheme,
+    theme: orangeTheme,
 }
 
 export const ColorThemeSlice = createSlice({

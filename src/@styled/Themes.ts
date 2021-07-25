@@ -1,23 +1,32 @@
 export interface IColorTheme {
-    backgroundColor: string,
-    textColor: string,
-    primary: string,
+    darkPrimaryColor: string
+    defaultPrimaryColor: string,
+    lightPrimaryColor: string,
+    textIconsColor: string,
+    accentColor: string,
+    primaryTextColor: string,
+    secondaryTextColor: string,
+    dividerColor: string,
 }
 
-export const darkTheme: IColorTheme = {
-    backgroundColor: "#333333",
-    textColor: "#000000",
-    primary: "#77ccdd"
+export const orangeTheme: IColorTheme = {
+    darkPrimaryColor: '#E64A19',
+    defaultPrimaryColor: '#FF5722',
+    lightPrimaryColor: '#FFCCBC',
+    textIconsColor: '#FFFFFF',
+    accentColor: '#FF9800',
+    primaryTextColor: '#212121',
+    secondaryTextColor: '#757575',
+    dividerColor: '#BDBDBD',
 }
 
-export const lightTheme: IColorTheme = {
-    backgroundColor: "#e0e0e0",
-    textColor: "#ffffff",
-    primary: "#55aacc"
-}
-
-export const partyTheme: IColorTheme = {
-    backgroundColor: "#eeff00",
-    textColor: "#ff88cc",
-    primary: "#aa00ee"
+export const brownTheme: IColorTheme = {
+    darkPrimaryColor: '#5D4037',
+    defaultPrimaryColor: '#795548',
+    lightPrimaryColor: '#D7CCC8',
+    textIconsColor: '#FFFFFF',
+    accentColor: '#9E9E9E',
+    primaryTextColor: '#212121',
+    secondaryTextColor: '#757575',
+    dividerColor: '#BDBDBD',
 }

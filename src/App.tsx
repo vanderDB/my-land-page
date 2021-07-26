@@ -1,6 +1,5 @@
 import React from 'react';
 import {Header} from "./components/Header";
-import {Body} from "./components/Body";
 import {Footer} from "./components/Footer";
 import {ThemeProvider} from "styled-components";
 import {GlobalStyle} from "./@styled/GlobalStyle";
@@ -30,7 +29,6 @@ function App() {
                     <Route path='/team' exact component={Team}/>
                     <Route path='/contact' exact component={Contact}/>
                 </Router>
-                <Body/>
                 <Footer/>
             </ThemeProvider>
         </>

@@ -1,5 +1,5 @@
-import HomeBanner from "./home-banner.jpg";
+import HomeBannerImg from "./home-banner.jpg";
 
 export {
-    HomeBanner
+    HomeBannerImg
 }

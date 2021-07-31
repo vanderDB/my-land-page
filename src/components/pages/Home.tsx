@@ -1,41 +1,14 @@
-import {HomeBanner} from "../../assets/img";
+import {HomeBannerImg} from "../../assets/img";
 import styled from "styled-components";
+import HomeBanner from "./home/HomeBanner";
+import MessageToClient from "./home/MessageToClient";
 
 export function Home() {
     return (
         <div>
-            <StyledBannerContainer>
-                <StyledHomeBannerTitle>
-                    We help your business grow
-                </StyledHomeBannerTitle>
-                <StyledImageContainer>
-                    <img src={HomeBanner}/>
-                </StyledImageContainer>
-            </StyledBannerContainer>
+            <HomeBanner />
+            <MessageToClient />
         </div>
     );
 };
 
-const StyledBannerContainer = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  margin-top: 100px;
-`;
-
-const StyledHomeBannerTitle = styled.div`  
-  font-size: 40px;
-  font-weight: bold;
-
-  max-width: 350px;
-  margin-right: 10px;
-`;
-
-const StyledImageContainer = styled.div`
-  width: 500px;
-  
-  img {
-    width: 100%;
-  }
-`;

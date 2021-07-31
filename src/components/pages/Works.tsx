@@ -1,14 +1,11 @@
-import {StyledPageHeader} from "../../@shared/styled/StyledPageHeader";
-import PageTitle from "../PageTitle";
-import PageDescription from "../PageDescription";
+import {WorksPageHeader} from "./works/WorksPageHeader";
+import WorksPerformance from "./works/WorksPerformance";
 
 export function Works() {
     return (
         <div>
-            <StyledPageHeader>
-                <PageTitle title='Take a look at our portfolio'/>
-                <PageDescription text='For every complex problem, there is an answer that is clear, simple, and wrong.'/>
-            </StyledPageHeader>
+            <WorksPageHeader/>
+            <WorksPerformance/>
         </div>
     );
-};
+}

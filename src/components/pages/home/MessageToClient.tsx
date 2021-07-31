@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import {IColorThemeProps} from "../../../@styled/IColorThemeProps";
+import {ShapeImg} from "../../../assets/img";
 
 function MessageToClient() {
     return (
@@ -25,7 +26,12 @@ const Container = styled.div<IColorThemeProps>`
   
   background-color: ${props => props.theme.darkPrimaryColor};
 
-  padding: 3.6rem 21rem;
+  padding: 10rem 21rem;
+
+  background-image: url(${ShapeImg});
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 `;
 
 const MessageToClientContainer = styled.div<IColorThemeProps>`

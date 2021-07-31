@@ -26,6 +26,7 @@ const StyledBannerContainer = styled.div`
 
 const StyledHomeBannerTitle = styled.div`  
   font-size: 40px;
+  font-weight: bold;
 
   max-width: 350px;
   margin-right: 10px;

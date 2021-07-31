@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {IColorThemeProps} from "../@styled/IColorThemeProps";
 
 type Props = {
 
@@ -12,8 +13,11 @@ export function Footer(props: Props) {
     );
 };
 
-const StyledFooter = styled.div`
+const StyledFooter = styled.div<IColorThemeProps>`
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: ${props => props.theme.darkPrimaryColor};
+  
+  min-height: 50px;
 `;

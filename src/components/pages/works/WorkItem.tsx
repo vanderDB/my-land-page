@@ -13,13 +13,13 @@ function WorkItem({backgroundImg, title}: WorkItemProps) {
     const [fadeScreenOpacity, setFadeScreenOpacity] = useState(0);
     const [itemTitleOpacity, setItemTitleOpacity] = useState(0);
 
-    const onMouseOver = () => {
+    const onMouseOverFadeScreen = () => {
         setImgScale(1.6);
         setFadeScreenOpacity(0.9);
         setItemTitleOpacity(1.0);
     }
 
-    const onMouseLeave = () => {
+    const onMouseOutFadeScreen = () => {
         setImgScale(1.0);
         setFadeScreenOpacity(0);
         setItemTitleOpacity(0);
@@ -27,9 +27,9 @@ function WorkItem({backgroundImg, title}: WorkItemProps) {
 
     return (
         <Container>
-            <StyledItem onMouseOver={onMouseOver} onMouseLeave={onMouseLeave} transformScale={imgScale}
-                        backgroundImg={backgroundImg}/>
-            <StyledItemFadeScreen onMouseOver={onMouseOver} onMouseLeave={onMouseLeave} opacity={fadeScreenOpacity}/>
+            <StyledItem transformScale={imgScale} backgroundImg={backgroundImg}/>
+            <StyledItemFadeScreen onMouseOver={onMouseOverFadeScreen} onMouseOut={onMouseOutFadeScreen}
+                                  opacity={fadeScreenOpacity}/>
             <StyledItemTitle opacity={itemTitleOpacity}>{title}</StyledItemTitle>
         </Container>
     );
@@ -104,5 +104,8 @@ const StyledItemTitle = styled.div<StyledItemTitleProps>`
 
   padding-bottom: 35px;
 
+  transition: 0.4s;
   opacity: ${props => props.opacity};
+  
+  pointer-events: none;
 `;

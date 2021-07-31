@@ -10,7 +10,7 @@ function HomeBanner() {
                 We help your business grow
             </StyledHomeBannerTitle>
             <StyledImageContainer>
-                <img src={HomeBannerImg}/>
+                <img src={HomeBannerImg} alt='home-banner'/>
             </StyledImageContainer>
         </StyledBannerContainer>
     );

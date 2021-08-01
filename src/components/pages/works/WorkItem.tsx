@@ -14,7 +14,7 @@ function WorkItem({backgroundImg, title}: WorkItemProps) {
     const [itemTitleOpacity, setItemTitleOpacity] = useState(0);
 
     const onMouseOverFadeScreen = () => {
-        setImgScale(1.6);
+        setImgScale(1.4);
         setFadeScreenOpacity(0.9);
         setItemTitleOpacity(1.0);
     }

@@ -1,11 +1,7 @@
 import styled from "styled-components";
 import {IColorThemeProps} from "../@styled/IColorThemeProps";
 
-type Props = {
-
-};
-
-export function Footer(props: Props) {
+export function Footer() {
     return (
         <StyledFooter>
             Copyright &copy; 2021
@@ -19,5 +15,5 @@ const StyledFooter = styled.div<IColorThemeProps>`
   align-items: center;
   background-color: ${props => props.theme.darkPrimaryColor};
   
-  min-height: 50px;
+  min-height: 70px;
 `;

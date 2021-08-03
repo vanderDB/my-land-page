@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import styled from "styled-components";
 import {IColorThemeProps} from "../@styled/IColorThemeProps";
 
@@ -11,9 +12,13 @@ function AppealToContact() {
             <StyledDescription>
                 Scaling-up your business is our mission!
             </StyledDescription>
-            <StyledContactBtn>
-                Contact
-            </StyledContactBtn>
+
+            <NavLink to={'/contact'}>
+                <StyledContactBtn>
+                    Contact
+                </StyledContactBtn>
+            </NavLink>
+
         </Container>
     );
 }
@@ -25,9 +30,15 @@ const Container = styled.div<IColorThemeProps>`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: ${props=>props.theme.darkPrimaryColor};
-  
+  background-color: ${props => props.theme.darkPrimaryColor};
+
   padding: 50px 0px;
+  
+  a {
+    width: 50%;
+    text-decoration: none!important;
+    color: ${props => props.theme.primaryTextColor};
+  }
 `;
 
 const StyledTitle = styled.div`
@@ -40,14 +51,19 @@ const StyledDescription = styled.div`
   margin: 30px 0px;
 `;
 
-const StyledContactBtn = styled.button<IColorThemeProps>`
-  background-color: ${props=>props.theme.accentColor};
-  
-  border: ${props=>props.theme.accentColor} 1px solid;
+const StyledContactBtn = styled.div<IColorThemeProps>`
+  background-color: ${props => props.theme.accentColor};
+
+  border: ${props => props.theme.accentColor} 1px solid;
   border-radius: 5px;
-  
+
   height: 50px;
-  width: 50%;
+  width: 100%;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: bold;  
+  
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;

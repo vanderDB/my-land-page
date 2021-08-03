@@ -7,6 +7,7 @@ import {RootState} from './@redux/Store';
 import {useSelector} from "react-redux";
 import {BrowserRouter as Router} from 'react-router-dom';
 import {Body} from './components/Body';
+import ScrollToTop from "./components/utils/ScrollToTop";
 
 function App() {
 
@@ -16,7 +17,8 @@ function App() {
         <>
             <ThemeProvider theme={currentColorTheme}>
                 <GlobalStyle/>
-                <Router>
+                <Router>                    
+                    <ScrollToTop/>
                     <Header/>
                     <Body/>
                     <Footer/>

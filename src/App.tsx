@@ -17,7 +17,7 @@ function App() {
         <>
             <ThemeProvider theme={currentColorTheme}>
                 <GlobalStyle/>
-                <Router>                    
+                <Router>
                     <ScrollToTop/>
                     <Header/>
                     <Body/>

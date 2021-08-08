@@ -50,8 +50,10 @@ export function Contact() {
                         <CustomTextInput name='subject' placeholder='Subject'/>
                         <CustomTextInput name='email' placeholder='Email'/>
                         <MyTextArea name="message" rows={3} placeholder="Your message"/>
+                        <StyledSubmitBtn>
+                            <button type="submit">Send message</button>
+                        </StyledSubmitBtn>
 
-                        <button type="submit">Send message</button>
                     </Form>
                 </Formik>
             </StyledFormContainer>
@@ -133,4 +135,27 @@ const StyledErrorMessage = styled.div<IColorThemeProps>`
   color: ${props => props.theme.errorColor};
   font-size: 14px;
   margin: 2px 15px;
+`;
+
+const StyledSubmitBtn = styled.div<IColorThemeProps>`  
+  
+  button {
+    cursor: pointer;
+    
+    background-color: ${props => props.theme.accentColor};
+
+    border: ${props => props.theme.accentColor} 1px solid;
+    border-radius: 5px;
+
+    height: 50px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+  }
+  
 `;

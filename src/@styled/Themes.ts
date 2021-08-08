@@ -7,6 +7,7 @@ export interface IColorTheme {
     primaryTextColor: string,
     secondaryTextColor: string,
     dividerColor: string,
+    errorColor: string,
 }
 
 export const orangeTheme: IColorTheme = {
@@ -18,6 +19,7 @@ export const orangeTheme: IColorTheme = {
     primaryTextColor: '#212121',
     secondaryTextColor: '#757575',
     dividerColor: '#BDBDBD',
+    errorColor: '#ff5e5e',
 }
 
 export const brownTheme: IColorTheme = {
@@ -29,4 +31,5 @@ export const brownTheme: IColorTheme = {
     primaryTextColor: '#212121',
     secondaryTextColor: '#757575',
     dividerColor: '#BDBDBD',
+    errorColor: '#ff5e5e',
 }

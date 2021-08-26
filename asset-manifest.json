@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/my-land-page/static/css/main.62db2206.chunk.css",
+    "main.js": "/my-land-page/static/js/main.ecbedbb9.chunk.js",
+    "main.js.map": "/my-land-page/static/js/main.ecbedbb9.chunk.js.map",
+    "runtime-main.js": "/my-land-page/static/js/runtime-main.b736c0ec.js",
+    "runtime-main.js.map": "/my-land-page/static/js/runtime-main.b736c0ec.js.map",
+    "static/js/2.79ad0ece.chunk.js": "/my-land-page/static/js/2.79ad0ece.chunk.js",
+    "static/js/2.79ad0ece.chunk.js.map": "/my-land-page/static/js/2.79ad0ece.chunk.js.map",
+    "index.html": "/my-land-page/index.html",
+    "static/css/main.62db2206.chunk.css.map": "/my-land-page/static/css/main.62db2206.chunk.css.map",
+    "static/js/2.79ad0ece.chunk.js.LICENSE.txt": "/my-land-page/static/js/2.79ad0ece.chunk.js.LICENSE.txt",
+    "static/media/aletter.7d4d2fb4.jpg": "/my-land-page/static/media/aletter.7d4d2fb4.jpg",
+    "static/media/bamby.a59b041c.jpg": "/my-land-page/static/media/bamby.a59b041c.jpg",
+    "static/media/bottles.9b2c2b89.jpg": "/my-land-page/static/media/bottles.9b2c2b89.jpg",
+    "static/media/home-banner.cfd3d27e.jpg": "/my-land-page/static/media/home-banner.cfd3d27e.jpg",
+    "static/media/paper.0113d4f3.jpg": "/my-land-page/static/media/paper.0113d4f3.jpg",
+    "static/media/rino.75b38567.jpg": "/my-land-page/static/media/rino.75b38567.jpg",
+    "static/media/shape.d9a830a2.png": "/my-land-page/static/media/shape.d9a830a2.png",
+    "static/media/woodblock.763f8619.jpg": "/my-land-page/static/media/woodblock.763f8619.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b736c0ec.js",
+    "static/js/2.79ad0ece.chunk.js",
+    "static/css/main.62db2206.chunk.css",
+    "static/js/main.ecbedbb9.chunk.js"
+  ]
+}

@@ -6,6 +6,7 @@ import BottlesImg from './bottles.jpg';
 import PaperImg from './paper.jpg';
 import RinoImg from './rino.jpg';
 import WoodBlockImg from './woodblock.jpg';
+import InstagramIcon from './instagram-icon.png';
 
 export {
     HomeBannerImg,
@@ -15,5 +16,6 @@ export {
     BottlesImg,
     PaperImg,
     RinoImg,
-    WoodBlockImg
+    WoodBlockImg,
+    InstagramIcon
 }
